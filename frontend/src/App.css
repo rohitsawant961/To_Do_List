@@ -1,0 +1,81 @@
+/* General styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #437fe7;
+}
+
+.App {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(65, 1, 1, 0.1);
+  max-width: 600px; /* Limit the width on larger screens */
+  margin: 0 auto; /* Center the content */
+}
+
+h1 {
+  text-align: center;
+  color: #282c34; /* Example color */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  gap: 10px;
+}
+
+input[type="text"],
+button {
+  padding: 10px;
+  border: 1px solid #050000;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4caf50; /* Example color */
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between checkbox, text, and button */
+  padding: 10px;
+  border-bottom: 1px solid #0e0101;
+}
+
+
+
+/* Responsive styles (using media queries) */
+
+@media (max-width: 500px) {  /* Adjust breakpoint as needed */
+  form {
+      flex-direction: column; /* Important for smaller screens */
+  }
+
+  li {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      align-items: flex-start; /* Align text to the left */
+      gap: 6px; /* Reduce the gap on smaller screens */
+  }
+
+
+  input[type="text"] {
+    width: 100%; /* Ensure inputs take full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+}
+
+
